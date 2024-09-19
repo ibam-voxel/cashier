@@ -44,6 +44,7 @@
 
 <script>
 // import { Ripple } from 'vuetify/lib';
+import { mapState } from 'vuex'
 
 export default ({
   data() {
@@ -77,7 +78,7 @@ export default ({
       }
       return this.products
     },
-    ...mapState('products', {
+    ...mapState('product', {
       products: 'products'
     })
   },
